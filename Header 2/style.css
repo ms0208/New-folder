@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,500&family=Poppins:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+.header {
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    padding:2rem 9%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    transition: .3s;
+}
+.header a {
+    font-size:1.7rem;
+    font-weight: bold;
+    margin-left: 60px;
+    transition: .3s;
+}
+@media (max-width:960px) {
+    .header {
+        background: yellow;
+    }
+    #menu-icons{    
+        display: block
+    }
+    .navbar{
+        position: absolute;
+        top:100%;
+        left: 0;
+        width: 100%;
+        padding: 2rem 9%;
+        background: red;
+    }
+    .navbar a{
+        display: block;
+        margin:2px 5px;
+        padding: 10px 5px;
+    }
+}
